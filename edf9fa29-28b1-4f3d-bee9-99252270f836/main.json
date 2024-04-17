@@ -1,1 +1,1 @@
-{}
+{"groups": {}, "interval": "1min", "assets": ["AX", "AYI", "AXH"], "strategy": [{"type": "IF", "conditions": [{"type": "BINARY", "first": {"name": "RSI", "args": {"ticker": "AYI", "length": "1"}, "advanced": {}}, "second": {"name": "MFI", "args": {"length": "2", "ticker": "AXH"}}, "comp": ">", "operator": ""}], "if_action": {"type": "ACTION", "steps": []}, "else_action": {"type": "ACTION", "steps": [{"action": "allocation", "asset": "AYI", "amount": "1"}]}}]}
